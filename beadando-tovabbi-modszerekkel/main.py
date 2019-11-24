@@ -157,14 +157,16 @@ def main():
     #train_neigh_()
     im2=image.ProcessImages('test')
     _train_neigh(80, feauters=['ecc', 'extent'])
-    getBestKValue(100, two_feature=True, features=['x0', 'y0'])
-    tree=DT()
+    #getBestKValue(100, two_feature=True, features=['x0', 'y0'])
+
+
+    #tree=DT()
     #im = image.ProcessImages('train')
     #X, Y = im.make_all()
-    tree.train(X, Y)
-    print(tree.test())
-    print(tree.valid())
-    tree.show(X, Y)
+    #tree.train(X, Y)
+    #print(tree.test())
+    #print(tree.valid())
+    #tree.show(X, Y)
 
 
 if __name__ == '__main__':
