@@ -7,10 +7,12 @@ class train(object):
         self.clf = tree.DecisionTreeClassifier()
 
     def train(self, X, Y):
+
         self.clf.fit(X, Y)
 
     def predict(self, X):
         list=[X]
+
         return self.clf.predict(list)
 
     def show(self, X, Y):
